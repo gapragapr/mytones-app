@@ -1,0 +1,32 @@
+.chapter_item
+    list-style: none
+    width: 100%
+    display: flex
+    box-sizing: border-box
+    cursor: pointer
+    padding: 13px
+    padding-left: 42px
+
+    p.chapter_item_name
+        margin: 0
+        margin-left: 24px
+        font-size: 16px
+        color: 4D4D56
+
+    svg
+        width: 16px
+        height: 16px
+
+.chapter_item.active_chapter_item
+    background-color: #F0F0F5
+    border-right: 6px solid #4343EF
+    padding: 12px
+    padding-left: 42px
+
+    path
+        fill: #4343EF
+
+    p.chapter_item_name
+        color: #4343EF
+        font-weight: 600
+        font-size: 18px
