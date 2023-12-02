@@ -14,7 +14,7 @@ const SearchInput: FC = () => {
     return (
         <div className="search_input_wrapper">
             <input type="text" className="search_input" placeholder="Search..."/>
-            <SvgWrapper svg={<SearchSvg />} className="search_input_svg" onClick={clickSearchInputSvgHandler} />
+            <SvgWrapper svg={<SearchSvg />} className="search_input_svg"/>
         </div>
     )
 }

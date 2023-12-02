@@ -3,11 +3,27 @@
 *
     font-family: 'Montserrat', sans-serif
     font-weight: 400
+    box-sizing: border-box
+    // overflow: hidden
 
 body
     margin: 0
     padding: 0
-    box-sizing: border-box
 
-.main_page
-    display: flex
+    .page_container
+        display: flex
+        justify-content: center
+        background-color: #F9F9FB
+        width: 100vw
+        height: 100vh
+
+    .page
+        display: flex
+        width: 1440px
+
+    .page_content
+        width: 100%
+        display: flex
+        flex-direction: column
+        padding: 32px
+        box-sizing: border-box

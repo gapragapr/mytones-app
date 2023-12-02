@@ -10,7 +10,7 @@ const UserInformation: FC = () => {
                 <img src="" alt="" className="user_avatar" />
             </div>
             <p className="user_name">Ryan Azhari</p>
-            <SvgWrapper svg={<DownArrowSvg />} className="" onClick={() => {}}/>
+            <SvgWrapper svg={<DownArrowSvg />} className="" />
         </div>
     )
 }

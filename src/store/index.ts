@@ -1,10 +1,17 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import appPathSlice from "./appPathSlice/appPathSlice";
+import accessTokenSlice from "./accessTokenSlice/accessTokenSlice";
+import { accessTokenApi } from "../api/accessTokenApi";
 
+const rootReducer = combineReducers({
+    appPathSlice,
+    accessTokenSlice,
+    [accessTokenApi.reducerPath]: accessTokenApi.reducer
+})
 
 const store = configureStore({
-    reducer: {
-
-    }
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(accessTokenApi.middleware)
 })
 
 export default store
